@@ -5,6 +5,7 @@
 
 @import "../components/utils/BurgerMenu/style";
 @import "../components/Header/style";
+@import "../components/Hero/style";
 
 html {
   font-family: "Poppins", sans-serif;
@@ -16,4 +17,5 @@ body {
 
 .app {
   padding: 20px;
+  overflow-x: hidden;
 }

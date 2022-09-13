@@ -1,0 +1,94 @@
+.hero {
+  .label {
+    &__headline {
+      max-width: 100%;
+      margin-block-end: 1.875rem;
+    }
+
+    &__text {
+      color: $colorBlack;
+      line-height: 2rem;
+      margin-block-end: 2.5rem;
+    }
+
+    &__search {
+      position: relative;
+      display: flex;
+      width: 100%;
+
+      &::before {
+        content: "";
+
+        background-image: url(../../assets/Hero/icons/Location.svg);
+        position: absolute;
+        left: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 20px;
+      }
+
+      &--input {
+        color: $colorDark;
+        font-size: $fontSize14;
+        padding-block: 1.25rem;
+        padding-inline: 3.75rem;
+        border-radius: 100vw;
+        border: 0;
+        flex: 1;
+      }
+
+      &--searchBtn {
+        position: absolute;
+        height: calc(100% - 10px);
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: $colorWhite;
+        font-size: $fontSize13;
+        font-weight: $fontWeight700;
+        letter-spacing: 1px;
+        background-color: $colorAccentRed;
+        border-radius: 100vw;
+        border: 0;
+        padding: 0 1.25rem;
+      }
+    }
+  }
+
+  .parrot {
+    position: relative;
+    .parrot {
+      transform: translateX(100px);
+    }
+    .membersCard {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 35px;
+      position: absolute;
+      bottom: 75px;
+      background-color: rgb(165, 165, 165);
+      background-position: center;
+      background-image: url(../../assets/Hero/Card.svg);
+      width: 240px;
+      height: 285px;
+      border-radius: 30px;
+
+      .members {
+        &__title {
+          color: $colorWhite;
+          font-weight: $fontWeight700;
+          margin: 0;
+        }
+        &__amount {
+          color: $colorWhite;
+          font-weight: $fontWeight700;
+          font-size: $fontSize40;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

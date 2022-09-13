@@ -16,7 +16,7 @@ const Header = () => {
         <LogoText />
       </div>
       <BurgerMenu navOpened={navOpened} toggleMenu={toggleMenu} />
-      <nav className="navigation">
+      <nav className={navOpened ? "navigation opened" : "navigation"}>
         <ul className="navigation__list">
           <li className="navigation__list--point">Home</li>
           <li className="navigation__list--point">Our mission</li>
