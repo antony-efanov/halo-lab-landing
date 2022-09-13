@@ -1,0 +1,77 @@
+.team {
+  text-align: center;
+  .title {
+    color: $colorDark;
+    font-size: $fontSize28;
+    font-weight: $fontWeight700;
+    margin-block-end: 0.5rem;
+  }
+  .description {
+    color: #1e1a20;
+    line-height: 1.6;
+    margin-block-end: 2.5rem;
+  }
+
+  &__members {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      background-image: url(../../assets/Team/WavyLine.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 50%;
+      position: absolute;
+      top: 15%;
+      right: 10%;
+      transform: rotate(50deg);
+      z-index: -1;
+    }
+
+    &::before {
+      content: "";
+      background-image: url(../../assets/Team/WavyLine.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 50%;
+      position: absolute;
+      top: 40%;
+      left: 22%;
+      transform: rotate(270deg);
+      z-index: -1;
+    }
+
+    &--memberOne {
+      border-radius: 50% 50% 46% 54% / 25% 23% 77% 75%;
+      transition: 350ms ease-in-out;
+      margin-inline-end: 30%;
+
+      &:hover {
+        border-radius: 66% 34% 46% 54% / 70% 51% 49% 30%;
+      }
+    }
+
+    &--memberTwo {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      transition: 350ms ease-in-out;
+      margin-inline-start: 30%;
+      &:hover {
+        border-radius: 66% 34% 33% 67% / 44% 51% 49% 56%;
+      }
+    }
+
+    &--memberThree {
+      border-radius: 66% 34% 46% 54% / 56% 66% 34% 44%;
+      transition: 350ms ease-in-out;
+      margin-inline-end: 30%;
+      &:hover {
+        border-radius: 23% 77% 22% 78% / 59% 74% 26% 41%;
+      }
+    }
+  }
+}
