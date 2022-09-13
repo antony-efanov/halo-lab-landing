@@ -1,5 +1,7 @@
+import { Main } from "./pages/Main";
+
 const App = () => {
-  return <div className="App">Rootz</div>;
+  return <Main />;
 };
 
 export default App;

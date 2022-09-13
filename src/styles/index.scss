@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import "./essential/noralize";
+@import "./essential/colors";
+@import "./essential/typography";
+
+@import "../components/utils/BurgerMenu/style";
+@import "../components/Header/style";
 
 html {
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: $colorLight;
+}
+
+.app {
+  padding: 20px;
 }
