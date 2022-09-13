@@ -1,0 +1,68 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: $colorAccentYellow;
+  border-radius: 1.25rem;
+  padding-block-end: 3.5rem;
+
+  .description {
+    padding: 2.5rem;
+    &__title {
+      color: $colorDark;
+      font-size: $fontSize28;
+      font-weight: $fontWeight700;
+    }
+
+    &__text {
+      color: #1e1a20;
+      line-height: 1.6;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    background-color: $colorLight;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+
+    &__title {
+      font-size: $fontSize24;
+      font-weight: $fontWeight600;
+      margin-block-end: 1.5rem;
+    }
+
+    &__nameInput {
+      color: $colorDark;
+      width: 100%;
+      padding: 0.75rem 1.5rem;
+      border-radius: 100vw;
+      border: 0;
+      margin-block-end: 1rem;
+    }
+
+    &__emailInput {
+      color: $colorDark;
+      width: 100%;
+      padding: 0.75rem 1.5rem;
+      border-radius: 100vw;
+      border: 0;
+      margin-block-end: 1.875rem;
+    }
+
+    &__submitBtn {
+      cursor: pointer;
+      color: $colorWhite;
+      font-size: $fontSize13;
+      font-weight: $fontWeight700;
+      width: 100%;
+      background-color: $colorAccentRed;
+      padding: 1rem 0;
+      border-radius: 100vw;
+      border: 0;
+      letter-spacing: 1px;
+    }
+  }
+}

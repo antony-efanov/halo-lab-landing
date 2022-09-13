@@ -1,3 +1,4 @@
+import { Contact } from "../../components/Contact";
 import { Header } from "../../components/Header";
 import { Hero } from "../../components/Hero";
 import { Team } from "../../components/Team";
@@ -8,6 +9,7 @@ const Main = () => {
       <Header />
       <Hero />
       <Team />
+      <Contact />
     </div>
   );
 };
