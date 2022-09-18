@@ -1,32 +1,71 @@
 .contact {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   background-color: $colorAccentYellow;
   border-radius: 1.25rem;
-  padding-block-end: 3.5rem;
+
+  gap: 3.5rem;
+  padding-block: 3.5rem;
+  padding-inline: 1rem;
+  margin-block-end: 6.25rem;
+
+  @include md {
+    flex-direction: row;
+    padding: 6.5rem 10%;
+    gap: 10%;
+  }
 
   .description {
-    padding: 2.5rem;
-    &__title {
-      color: $colorDark;
-      font-size: $fontSize28;
-      font-weight: $fontWeight700;
+    padding-inline: 1.25rem;
+    color: $colorDark;
+    line-height: 1.6;
+
+    @include md {
+      padding-inline: 0;
+      max-width: 40%;
     }
 
-    &__text {
-      color: #1e1a20;
-      line-height: 1.6;
+    &__title {
+      font-size: $fontSize28;
+      font-weight: $fontWeight700;
     }
   }
 
   .form {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
     background-color: $colorLight;
     padding: 2.5rem 1.5rem;
     border-radius: 1rem;
+    width: 100%;
+
+    &::after {
+      position: absolute;
+      top: -15px;
+      right: -30px;
+      content: "";
+      background-image: url(../../assets/Contact/icons/RedLeaf.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 3.7rem;
+      height: 2.35rem;
+    }
+
+    &::before {
+      position: absolute;
+      top: 30px;
+      right: -10px;
+      content: "";
+      background-image: url(../../assets/Contact/icons/BlueLeaf.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 1.875rem;
+      height: 1rem;
+    }
 
     &__title {
       font-size: $fontSize24;

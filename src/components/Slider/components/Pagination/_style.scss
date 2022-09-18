@@ -1,0 +1,23 @@
+.pagination {
+  display: flex;
+  gap: 1.5rem;
+
+  &__current-page {
+    font-size: $fontSize24;
+    letter-spacing: 5px;
+  }
+
+  &__pages-amount {
+    opacity: 20%;
+    letter-spacing: 3px;
+  }
+
+  &__button {
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    position: relative;
+  }
+}

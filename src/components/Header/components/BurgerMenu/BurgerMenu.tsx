@@ -5,7 +5,9 @@ const BurgerMenu: FC<IBurgerMenuProps> = ({ navOpened, toggleMenu }) => {
   return (
     <div
       onClick={toggleMenu}
-      className={navOpened ? "burgerMenu opened" : "burgerMenu"}
+      className={
+        navOpened ? "navigation__burger-menu opened" : "navigation__burger-menu"
+      }
     ></div>
   );
 };

@@ -1,23 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import "./essential/vars";
 @import "./essential/noralize";
-@import "./essential/colors";
-@import "./essential/typography";
+@import "./essential/breakponts";
 
-@import "../components/utils/BurgerMenu/style";
+@import "../components/Header/components/BurgerMenu/style";
 @import "../components/Header/style";
 @import "../components/Hero/style";
 @import "../components/Team/style";
 @import "../components/Contact/style";
+@import "../components/FAQ/style";
+@import "../components/FAQ/components/QnA/style";
+@import "../components/Slider/style";
+@import "../components/Footer/style";
+@import "../components/Slider/components/Pagination/style";
+@import "../components/Slider/components/Slide/style";
 
 html {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
+  display: flex;
+  justify-content: center;
   background-color: $colorLight;
 }
 
-.app {
-  padding: 1.25rem;
-  overflow-x: hidden;
+#root {
+  max-width: 70rem;
+  width: 100%;
 }

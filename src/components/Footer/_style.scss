@@ -1,0 +1,70 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70rem;
+  padding-inline: 1.25rem;
+  color: $colorDark;
+  line-height: 24px;
+  margin-block-end: 2.5rem;
+
+  @include md {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-block-end: 7.5rem;
+  }
+
+  .contacts {
+    padding-right: 75px;
+    &__title {
+      font-size: $fontSize28;
+      font-weight: $fontWeight700;
+    }
+
+    &__copyright {
+      font-size: $fontSize13;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    gap: 42px;
+    .headquarters {
+      p {
+        margin-block: 0.5rem;
+      }
+      @include md {
+        position: absolute;
+        left: 53%;
+        transform: translateX(-50%);
+      }
+      &__title {
+        font-size: $fontSize18;
+        font-weight: $fontWeight700;
+        letter-spacing: 0.3px;
+      }
+    }
+
+    .social {
+      &__title {
+        font-size: $fontSize18;
+      }
+      &__links {
+        display: flex;
+        gap: 13px;
+      }
+
+      &__link {
+        display: grid;
+        place-items: center;
+        background-color: $colorDark;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 100vw;
+      }
+    }
+  }
+}

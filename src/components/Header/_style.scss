@@ -1,60 +1,68 @@
 .header {
-  margin-block-start: 2rem;
-  margin-block-end: 6rem;
+  padding-inline: 1.25rem;
   position: relative;
 
+  margin-block-start: 2rem;
+  margin-block-end: 6rem;
+
   &::after {
-    content: "";
-    background-color: $colorDark;
-    width: 100%;
-    height: 3px;
     position: absolute;
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
+
+    content: "";
+    background-color: $colorDark;
+    width: calc(100% - 2.5rem);
+    height: 3px;
   }
 
-  .logo {
-    cursor: pointer;
+  &__logo {
     display: flex;
     place-items: center;
+
+    cursor: pointer;
     gap: 0.75rem;
   }
 
   .navigation {
-    background-color: rgb(155, 138, 138);
-    display: none;
-    transform: translateX(120%);
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    transition: 250ms ease-in-out;
-    position: absolute;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    z-index: 10;
 
-    &__list {
-      list-style-type: none;
-      padding-inline-start: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+
+    transform: translateX(120%);
+    transition: 250ms ease-in-out;
+
+    ul {
       display: flex;
       flex-direction: column;
+
       margin-block-start: 5.5rem;
       gap: 3.5rem;
+    }
 
-      &--point {
-        cursor: pointer;
-        font-size: $fontSize28;
-        font-weight: $fontWeight400;
+    &__point {
+      cursor: pointer;
+      font-size: $fontSize28;
+      font-weight: $fontWeight400;
 
-        &:hover {
-          font-weight: $fontWeight700;
-        }
+      &:hover {
+        font-weight: $fontWeight700;
       }
     }
 
-    &__applyBtn {
+    &__apply-btn {
       cursor: pointer;
       width: 100%;
       font-weight: $fontWeight700;
@@ -67,5 +75,6 @@
 
   .navigation.opened {
     transform: translateX(0%);
+    visibility: visible;
   }
 }

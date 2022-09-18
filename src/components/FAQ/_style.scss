@@ -1,0 +1,41 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+
+  padding-inline: 1.25rem;
+  margin-block-end: 6.25rem;
+  gap: 3rem;
+
+  @include md {
+    flex-direction: row;
+
+    gap: 8%;
+  }
+
+  .call {
+    &__title {
+      color: $colorDark;
+      font-size: $fontSize40;
+      font-weight: $fontWeight700;
+    }
+
+    &__description {
+      color: #1e1a20;
+      line-height: 1.6;
+      margin-block-end: 2rem;
+    }
+
+    &__btn {
+      color: $colorWhite;
+      font-size: $fontSize13;
+      font-weight: $fontWeight700;
+      text-transform: uppercase;
+      cursor: pointer;
+      background-color: $colorAccentRed;
+      letter-spacing: 1px;
+      padding: 1rem 2.3rem;
+      border-radius: 100vw;
+      border: 0;
+    }
+  }
+}

@@ -1,4 +1,17 @@
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1.25rem;
+  margin-block-end: 6.25rem;
+  gap: 4rem;
+
+  @include md {
+    gap: 8rem;
+    flex-direction: row;
+  }
+
   .label {
     &__headline {
       max-width: 100%;
@@ -8,12 +21,14 @@
     &__text {
       color: $colorBlack;
       line-height: 2rem;
+      max-width: 450px;
       margin-block-end: 2.5rem;
     }
 
     &__search {
       position: relative;
       display: flex;
+      max-width: 450px;
       width: 100%;
 
       &::before {

@@ -1,0 +1,60 @@
+.navigation {
+  &__burger-menu {
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    z-index: 12;
+
+    cursor: pointer;
+    background-color: $colorBlack;
+    border-radius: 100vw;
+
+    width: 17px;
+    height: 3px;
+
+    transform-origin: right;
+    transition: 10ms ease-in-out;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      bottom: 6px;
+
+      content: "";
+      background-color: $colorBlack;
+      border-radius: 100vw;
+
+      width: 22px;
+      height: 3px;
+
+      transition: 250ms ease-in-out;
+    }
+
+    &::after {
+      position: absolute;
+      right: 0;
+      top: 6px;
+
+      content: "";
+      background-color: $colorBlack;
+      border-radius: 100vw;
+
+      width: 22px;
+      height: 3px;
+
+      transition: 250ms ease-in-out;
+    }
+  }
+
+  &__burger-menu.opened {
+    width: 0px;
+
+    &::before {
+      transform: rotate(45deg) translate(4px, 4px);
+    }
+
+    &::after {
+      transform: rotate(-45deg) translate(4px, -4px);
+    }
+  }
+}
