@@ -11,17 +11,17 @@ const Team = () => {
       </p>
       <div className="team__members">
         <img
-          className="team__members--memberOne"
+          className="team__members_member-one"
           src={TeamMember1}
           alt="TeamMember1"
         />
         <img
-          className="team__members--memberTwo"
+          className="team__members_member-two"
           src={TeamMember2}
           alt="TeamMember2"
         />
         <img
-          className="team__members--memberThree"
+          className="team__members_member-three"
           src={TeamMember3}
           alt="TeamMember3"
         />

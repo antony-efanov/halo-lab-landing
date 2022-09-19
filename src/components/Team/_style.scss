@@ -70,7 +70,7 @@
       }
     }
 
-    &--memberOne {
+    &_member-one {
       border-radius: 50% 50% 46% 54% / 25% 23% 77% 75%;
       transition: 350ms ease-in-out;
       margin-inline-end: 30%;
@@ -86,7 +86,7 @@
       }
     }
 
-    &--memberTwo {
+    &_member-two {
       border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
       transition: 350ms ease-in-out;
       margin-inline-start: 30%;
@@ -102,7 +102,7 @@
       }
     }
 
-    &--memberThree {
+    &_member-three {
       border-radius: 66% 34% 46% 54% / 56% 66% 34% 44%;
       transition: 350ms ease-in-out;
       margin-inline-end: 30%;
