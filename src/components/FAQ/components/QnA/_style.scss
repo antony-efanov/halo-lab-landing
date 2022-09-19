@@ -33,12 +33,9 @@
     }
 
     &__btn {
-      cursor: pointer;
       display: grid;
       place-items: center;
-      background-color: $colorAccentRed;
-      border-radius: 100vw;
-      border: 0;
+      padding: 0;
       width: 2.5rem;
       height: 2.5rem;
     }

@@ -1,4 +1,5 @@
 .footer {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,6 +14,22 @@
     justify-content: space-between;
     align-items: start;
     margin-block-end: 7.5rem;
+  }
+
+  .background {
+    z-index: -10;
+    position: absolute;
+    bottom: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $colorLight;
+    width: 100vw;
+    height: 150%;
+
+    @include md {
+      bottom: -7.5rem;
+      height: 450%;
+    }
   }
 
   .contacts {

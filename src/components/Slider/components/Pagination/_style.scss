@@ -19,5 +19,9 @@
     background-color: transparent;
     border: none;
     position: relative;
+
+    &_left {
+      margin-inline-end: 0.65rem;
+    }
   }
 }

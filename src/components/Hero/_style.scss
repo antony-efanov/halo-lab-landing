@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -10,6 +11,17 @@
   @include md {
     gap: 8rem;
     flex-direction: row;
+  }
+
+  .hero-background {
+    z-index: -20;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+    background-color: $colorLight;
+    width: 100vw;
+    height: 180%;
   }
 
   .label {
@@ -33,7 +45,6 @@
 
       &::before {
         content: "";
-
         background-image: url(../../assets/Hero/icons/Location.svg);
         position: absolute;
         left: 25px;
@@ -42,54 +53,56 @@
         width: 14px;
         height: 20px;
       }
+    }
 
-      &--input {
-        color: $colorDark;
-        font-size: $fontSize14;
-        padding-block: 1.25rem;
-        padding-inline: 3.75rem;
-        border-radius: 100vw;
-        border: 0;
-        flex: 1;
-      }
+    &__search-input {
+      color: $colorDark;
+      font-size: $fontSize14;
+      padding-block: 1.25rem;
+      padding-inline: 3.75rem;
+      border-radius: 100vw;
+      border: 0;
+      flex: 1;
+    }
 
-      &--searchBtn {
-        position: absolute;
-        height: calc(100% - 10px);
-        right: 8px;
-        top: 50%;
-        transform: translateY(-50%);
-        cursor: pointer;
-        color: $colorWhite;
-        font-size: $fontSize13;
-        font-weight: $fontWeight700;
-        letter-spacing: 1px;
-        background-color: $colorAccentRed;
-        border-radius: 100vw;
-        border: 0;
-        padding: 0 1.25rem;
-      }
+    &__search-btn {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: calc(100% - 10px);
+      padding-inline: 2rem;
+      font-size: $fontSize13;
+      letter-spacing: 1px;
     }
   }
 
-  .parrot {
+  .illustration {
     position: relative;
     .parrot {
-      transform: translateX(100px);
+      width: 100%;
     }
-    .membersCard {
+    .members-card {
+      background-position: center;
+      background-image: url(../../assets/Hero/Card.svg);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       padding: 35px;
       position: absolute;
-      bottom: 75px;
-      background-color: rgb(165, 165, 165);
-      background-position: center;
-      background-image: url(../../assets/Hero/Card.svg);
-      width: 240px;
-      height: 285px;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      max-width: 185px;
+      max-height: 225px;
       border-radius: 30px;
+
+      @include lg {
+        left: -40px;
+        max-width: 220px;
+        max-height: 280px;
+      }
 
       .members {
         &__title {
@@ -100,8 +113,12 @@
         &__amount {
           color: $colorWhite;
           font-weight: $fontWeight700;
-          font-size: $fontSize40;
+          font-size: $fontSize28;
           margin: 0;
+
+          @include lg {
+            font-size: $fontSize40;
+          }
         }
       }
     }

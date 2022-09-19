@@ -1,0 +1,21 @@
+.generic-button {
+  color: $colorWhite;
+  background-color: $colorAccentRed;
+  cursor: pointer;
+  border: none;
+  border-radius: 100vw;
+  font-size: $fontSize13;
+  font-weight: $fontWeight700;
+  padding-block: 1rem;
+  text-transform: uppercase;
+
+  transition: background-color 150ms ease-in-out;
+
+  &:hover {
+    background-color: hsl(356, 77%, 74%);
+  }
+
+  &:active {
+    background-color: hsl(356, 66%, 77%);
+  }
+}

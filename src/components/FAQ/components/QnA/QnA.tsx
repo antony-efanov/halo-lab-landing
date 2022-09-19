@@ -15,7 +15,7 @@ const QnA: FC<IQnAProps> = ({ question, answer }) => {
         <h3 onClick={toggleAnswer} className="question__title">
           {question}
         </h3>
-        <button onClick={toggleAnswer} className="question__btn">
+        <button onClick={toggleAnswer} className="generic-button question__btn">
           {answerOpened ? <Minus /> : <Plus />}
         </button>
       </div>

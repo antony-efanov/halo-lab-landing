@@ -73,34 +73,24 @@
       margin-block-end: 1.5rem;
     }
 
-    &__nameInput {
+    .input {
       color: $colorDark;
       width: 100%;
       padding: 0.75rem 1.5rem;
       border-radius: 100vw;
       border: 0;
+    }
+
+    &__name-input {
       margin-block-end: 1rem;
     }
 
-    &__emailInput {
-      color: $colorDark;
-      width: 100%;
-      padding: 0.75rem 1.5rem;
-      border-radius: 100vw;
-      border: 0;
+    &__email-input {
       margin-block-end: 1.875rem;
     }
 
-    &__submitBtn {
-      cursor: pointer;
-      color: $colorWhite;
-      font-size: $fontSize13;
-      font-weight: $fontWeight700;
+    &__submit-btn {
       width: 100%;
-      background-color: $colorAccentRed;
-      padding: 1rem 0;
-      border-radius: 100vw;
-      border: 0;
       letter-spacing: 1px;
     }
   }

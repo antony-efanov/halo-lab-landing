@@ -4,7 +4,7 @@ import { ReactComponent as LogoText } from "../../assets/Header/Rootz.svg";
 import BurgerMenu from "./components/BurgerMenu/BurgerMenu";
 
 const Header = () => {
-  const [navOpened, setNavOpened] = useState(true);
+  const [navOpened, setNavOpened] = useState(false);
 
   const toggleMenu = () => {
     setNavOpened((prev) => !prev);
@@ -19,13 +19,38 @@ const Header = () => {
       <BurgerMenu navOpened={navOpened} toggleMenu={toggleMenu} />
       <nav className={navOpened ? "navigation opened" : "navigation"}>
         <ul>
-          <li className="navigation__point">Home</li>
-          <li className="navigation__point">Our mission</li>
-          <li className="navigation__point">Places</li>
-          <li className="navigation__point">Team</li>
+          <a href="#hero">
+            <li onClick={toggleMenu} className="navigation__point">
+              Home
+            </li>
+          </a>
+          <a href="#slider">
+            <li onClick={toggleMenu} className="navigation__point">
+              Our mission
+            </li>
+          </a>
+          <a href="#faq">
+            <li onClick={toggleMenu} className="navigation__point">
+              Places
+            </li>
+          </a>
+          <a href="#team">
+            <li onClick={toggleMenu} className="navigation__point">
+              Team
+            </li>
+          </a>
         </ul>
-        <button className="navigation__apply-btn">Apply</button>
       </nav>
+      <button
+        onClick={toggleMenu}
+        className={
+          navOpened
+            ? "generic-button navigation__apply-btn opened"
+            : "generic-button navigation__apply-btn"
+        }
+      >
+        Apply
+      </button>
     </header>
   );
 };

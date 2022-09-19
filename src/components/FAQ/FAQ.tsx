@@ -3,7 +3,7 @@ import { Questions, Answers } from "./enums";
 
 const FAQ = () => {
   return (
-    <section className="faq">
+    <section id="faq" className="faq">
       <div className="call">
         <h1 className="call__title">Ready to Get started?</h1>
         <p className="call__description">
@@ -11,7 +11,9 @@ const FAQ = () => {
           ciate it with a geometric patterned wallpaper or colourful prints on
           interior fabrics.
         </p>
-        <button className="call__btn">Contact us</button>
+        <a href="#contact">
+          <button className="generic-button call__btn">Contact us</button>
+        </a>
       </div>
       <div className="questions">
         <QnA

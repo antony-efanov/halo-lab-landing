@@ -8,7 +8,7 @@ import { Team } from "../../components/Team";
 
 const Main = () => {
   return (
-    <>
+    <div className="container">
       <Header />
       <Hero />
       <Team />
@@ -16,7 +16,7 @@ const Main = () => {
       <FAQ />
       <Slider />
       <Footer />
-    </>
+    </div>
   );
 };
 

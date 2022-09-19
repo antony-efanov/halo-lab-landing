@@ -4,7 +4,8 @@ import { ReactComponent as HeadWithHeart } from "../../assets/Hero/icons/HeadWit
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
+      <div className="hero-background"></div>
       <div className="label">
         <Headline className="label__headline" />
         <p className="label__text">
@@ -13,16 +14,16 @@ const Hero = () => {
         </p>
         <div className="label__search">
           <input
-            className="label__search--input"
+            className="label__search-input"
             type="text"
             placeholder="Find the place to help"
           />
-          <button className="label__search--searchBtn">SEARCH</button>
+          <button className="generic-button label__search-btn">SEARCH</button>
         </div>
       </div>
-      <div className="parrot">
+      <div className="illustration">
         <Parrot className="parrot" />
-        <div className="membersCard">
+        <div className="members-card">
           <HeadWithHeart />
           <div className="members">
             <p className="members__title">Members</p>

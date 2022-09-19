@@ -2,6 +2,7 @@
 @import "./essential/vars";
 @import "./essential/noralize";
 @import "./essential/breakponts";
+@import "./essential/buttons";
 
 @import "../components/Header/components/BurgerMenu/style";
 @import "../components/Header/style";
@@ -13,7 +14,7 @@
 @import "../components/Slider/style";
 @import "../components/Footer/style";
 @import "../components/Slider/components/Pagination/style";
-@import "../components/Slider/components/Slide/style";
+@import "../components/Slider/components/Slides/style";
 
 html {
   font-family: "Poppins", sans-serif;
@@ -22,12 +23,11 @@ html {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  background-color: $colorLight;
+  background-color: $colorWhite;
 }
 
-#root {
-  max-width: 70rem;
+.container {
   width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
 }

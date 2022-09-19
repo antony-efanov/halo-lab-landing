@@ -4,7 +4,7 @@ import TeamMember3 from "../../assets/Team/TeamMember3.webp";
 
 const Team = () => {
   return (
-    <section className="team">
+    <section id="team" className="team">
       <h2 className="title">Our Top Team</h2>
       <p className="description">
         Learn more about how you can save our planet's nature.

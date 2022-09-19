@@ -1,5 +1,5 @@
 export interface PaginationProps {
-  onPrevSlide: () => void;
-  onNextSlide: () => void;
+  setCurrentSlide: any;
+  setSlideContent: any;
   currentSlide: number;
 }

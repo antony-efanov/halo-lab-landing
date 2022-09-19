@@ -5,6 +5,7 @@ import LinkedInLogo from "../../assets/Footer/icons/LinkedIn.svg";
 const Footer = () => {
   return (
     <section className="footer">
+      <div className="background"></div>
       <div className="contacts">
         <h1 className="contacts__title">Contacts</h1>
         <p className="contacts__copyright">
@@ -22,13 +23,13 @@ const Footer = () => {
           <h2 className="social__title">Social media</h2>
           <div className="social__links">
             <a className="social__link" href="#">
-              <img src={TwitterLogo} alt="" />
+              <img src={TwitterLogo} alt="tw_logo" />
             </a>
-            <a className="social__link" href="#">
+            <a className="social__link" href="fb_logo">
               <img src={FBLogo} alt="" />
             </a>
             <a className="social__link" href="#">
-              <img src={LinkedInLogo} alt="" />
+              <img src={LinkedInLogo} alt="in_logo" />
             </a>
           </div>
         </div>

@@ -1,0 +1,93 @@
+.slides {
+  display: flex;
+  align-items: center;
+  gap: 3.25rem;
+
+  .slide {
+    position: relative;
+    background-color: $colorLight;
+    width: 350px;
+    padding: 5rem 2rem 2rem 2rem;
+    text-align: center;
+    box-shadow: 0px 0px 0px 20px hsla(345, 20%, 96%, 0.2);
+    border-radius: 66% 34% 41% 59% / 61% 30% 70% 39%;
+
+    transition: 350ms ease-in-out;
+
+    &:hover {
+      border-radius: 44% 56% 37% 63% / 46% 63% 37% 54%;
+    }
+
+    &__image {
+      position: absolute;
+      top: -50px;
+      width: 125px;
+
+      img {
+        border-radius: 54% 46% 38% 62% / 64% 58% 42% 36%;
+      }
+    }
+
+    &__title {
+      font-size: $fontSize18;
+    }
+
+    &__text {
+      font-size: $fontSize16;
+      line-height: 1.6;
+    }
+  }
+
+  &__secondary-slide {
+    position: relative;
+    width: 150px;
+    display: none;
+
+    @include md {
+      display: flex;
+    }
+
+    &_image {
+      filter: brightness(50%);
+      border-radius: 66% 34% 41% 59% / 61% 30% 70% 39%;
+    }
+
+    &_title {
+      margin: 0;
+      color: $colorWhite;
+      font-size: $fontSize18;
+      font-weight: $fontWeight600;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__thirdly-slide {
+    position: relative;
+    width: 125px;
+    font-size: 0.75rem;
+    display: none;
+
+    @include lg {
+      display: flex;
+    }
+
+    &_image {
+      filter: brightness(50%);
+      border-radius: 71% 29% 74% 26% / 57% 42% 58% 43%;
+    }
+
+    &_title {
+      margin: 0;
+      color: $colorWhite;
+      font-size: $fontSize18;
+      font-weight: $fontWeight600;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
