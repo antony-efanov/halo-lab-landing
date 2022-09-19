@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { ReactComponent as LogoIcon } from "../../assets/Header/icons/Logo.svg";
 import { ReactComponent as LogoText } from "../../assets/Header/Rootz.svg";
 import BurgerMenu from "./components/BurgerMenu/BurgerMenu";
 import { Logo } from "./components/Logo";

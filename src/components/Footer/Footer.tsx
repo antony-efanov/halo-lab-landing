@@ -22,15 +22,15 @@ const Footer = () => {
         <div className="social">
           <h2 className="social__title">Social media</h2>
           <div className="social__links">
-            <a className="social__link" href="#">
+            <button className="social__link">
               <img src={TwitterLogo} alt="tw_logo" />
-            </a>
-            <a className="social__link" href="fb_logo">
+            </button>
+            <button className="social__link">
               <img src={FBLogo} alt="" />
-            </a>
-            <a className="social__link" href="#">
+            </button>
+            <button className="social__link">
               <img src={LinkedInLogo} alt="in_logo" />
-            </a>
+            </button>
           </div>
         </div>
       </div>

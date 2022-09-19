@@ -75,12 +75,20 @@
       }
 
       &__link {
+        cursor: pointer;
         display: grid;
         place-items: center;
         background-color: $colorDark;
         width: 2rem;
         height: 2rem;
         border-radius: 100vw;
+        border: none;
+
+        transition: 150ms ease-in-out;
+
+        &:hover {
+          background-color: black;
+        }
       }
     }
   }
