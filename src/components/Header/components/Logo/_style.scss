@@ -1,0 +1,43 @@
+.logo {
+  width: 37px;
+  height: 37px;
+  position: relative;
+
+  &:hover {
+    .logo__blue-leaf {
+      transform-origin: bottom;
+      transform: rotate(28deg);
+    }
+
+    .logo__yellow-leaf {
+      transform-origin: bottom;
+      bottom: 5px;
+      transform: rotate(-35deg);
+    }
+  }
+
+  &__blue-leaf {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+
+    transition: 150ms ease-in-out;
+  }
+
+  &__red-leaf {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 7px;
+    bottom: 1px;
+  }
+
+  &__yellow-leaf {
+    z-index: 3;
+    position: absolute;
+    bottom: -1px;
+    left: 7px;
+
+    transition: 150ms ease-in-out;
+  }
+}

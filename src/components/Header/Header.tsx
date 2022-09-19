@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ReactComponent as LogoIcon } from "../../assets/Header/icons/Logo.svg";
 import { ReactComponent as LogoText } from "../../assets/Header/Rootz.svg";
 import BurgerMenu from "./components/BurgerMenu/BurgerMenu";
+import { Logo } from "./components/Logo";
 
 const Header = () => {
   const [navOpened, setNavOpened] = useState(false);
@@ -13,7 +14,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__logo">
-        <LogoIcon />
+        <Logo />
         <LogoText />
       </div>
       <BurgerMenu navOpened={navOpened} toggleMenu={toggleMenu} />
